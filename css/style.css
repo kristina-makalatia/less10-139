@@ -110,3 +110,30 @@ a {
     height: var( --main-size);
     background-color: var(--main-bg-color);;
 }
+
+
+
+
+/* grid styles */
+.grid-item {
+    background-color: blueviolet;
+    color: #fff;
+    height: 150px;
+}
+.grid-wraper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+/* @media (max-width: 1024px) {
+    .grid-wraper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .grid-wraper {
+        grid-template-columns: repeat(1, 60%);
+    }
+} */
